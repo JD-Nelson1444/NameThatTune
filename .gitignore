@@ -1,0 +1,8 @@
+# Local tooling (preview server config)
+.claude/
+node_modules/
+
+# OS clutter
+Thumbs.db
+Desktop.ini
+.DS_Store
