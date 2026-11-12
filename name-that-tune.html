@@ -94,7 +94,9 @@
   .choices { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
   @media (max-width: 460px) { .choices { grid-template-columns: 1fr; } h1 { font-size: 1.9rem; } }
   .choice { border-radius: 10px; padding: 14px; text-align: left; background: var(--ink); min-width: 0; overflow-wrap: anywhere; }
-  .choice small { display: block; color: var(--muted); }
+  .choice small { display: block; color: #d4cdf2; }
+  .choice:disabled { opacity: .8; } /* locked cards stay readable in a dark room */
+  .choice.correct, .choice.wrong { opacity: 1; }
   .choice.correct { border-color: var(--mint); background: rgba(79,209,165,.15); }
   .choice.wrong { border-color: var(--coral); background: rgba(255,107,90,.15); }
   .actions { display: flex; flex-wrap: wrap; gap: 10px; justify-content: space-between; align-items: center; }
